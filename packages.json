@@ -1,0 +1,7 @@
+{
+    "packages": {
+        "kmoll/drupal-project": {
+            "8.x-dev": { @composer.json },
+        }
+    }
+}
