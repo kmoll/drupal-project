@@ -9,12 +9,25 @@
             "role": ""
         }
     ],
-    "repositories": [
-        {
+    "repositories": {
+        "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        "sc": {
+            "type": "package",
+            "package": {
+                "name": "drupal/adobeanalytics",
+                "version": "dev-8.x-1.x",
+                "type": "drupal-module",
+                "source": {
+                    "url": "https://git.drupal.org/sandbox/panshulk1/2641758.git",
+                    "type": "git",
+                    "reference": "8.x-1.x"
+                }
+            }
         }
-    ],
+    },
     "require": {
         "composer/installers": "^1.0.20",
         "drupal-composer/drupal-scaffold": "^2.0.1",
@@ -27,7 +40,8 @@
         "drupal/deploy": "~1",
         "drupal/relaxed": "~1",
         "drupal/multiversion": "~1",
-        "drupal/workspace": "~1"
+        "drupal/workspace": "~1",
+        "drupal/adobeanalytics": "dev-8.x-1.x"
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -65,12 +79,24 @@
     },
     "extra": {
         "installer-paths": {
-            "docroot/core": ["type:drupal-core"],
-            "docroot/libraries/{$name}": ["type:drupal-library"],
-            "docroot/modules/contrib/{$name}": ["type:drupal-module"],
-            "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
+            "docroot/core": [
+                "type:drupal-core"
+            ],
+            "docroot/libraries/{$name}": [
+                "type:drupal-library"
+            ],
+            "docroot/modules/contrib/{$name}": [
+                "type:drupal-module"
+            ],
+            "docroot/profiles/contrib/{$name}": [
+                "type:drupal-profile"
+            ],
+            "docroot/themes/contrib/{$name}": [
+                "type:drupal-theme"
+            ],
+            "drush/contrib/{$name}": [
+                "type:drupal-drush"
+            ]
         }
     }
 }
