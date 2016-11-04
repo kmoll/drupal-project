@@ -48,7 +48,8 @@
         "drupal/xmlsitemap": "^1.0@alpha",
         "drupal/robotstxt": "^1.0",
         "drupal/username_enumeration_prevention": "^1.0@beta",
-        "drupal/seckit": "^1.0@alpha"
+        "drupal/seckit": "^1.0@alpha",
+        "drupal/forward": "^1.7"
     },
     "require-dev": {
         "behat/mink": "~1.7",
