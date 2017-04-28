@@ -13,19 +13,6 @@
         "0": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        "sc": {
-            "type": "package",
-            "package": {
-                "name": "drupal/adobeanalytics",
-                "version": "dev-8.x-1.x",
-                "type": "drupal-module",
-                "source": {
-                    "url": "https://git.drupal.org/sandbox/panshulk1/2641758.git",
-                    "type": "git",
-                    "reference": "8.x-1.x"
-                }
-            }
         }
     },
     "require": {
